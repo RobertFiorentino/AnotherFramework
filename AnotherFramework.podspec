@@ -88,8 +88,8 @@ s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-s.source_files  = "./**/*" #"Classes", "Classes/**/*.{h,m}"
-#s.source_files  = "AnotherFramework/**/*" #"Classes", "Classes/**/*.{h,m}"
+#s.source_files  = "./**/*" #"Classes", "Classes/**/*.{h,m}"
+s.source_files  = "AnotherFramework/**/*" #"Classes", "Classes/**/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -132,5 +132,6 @@ s.source_files  = "./**/*" #"Classes", "Classes/**/*.{h,m}"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "mopub-ios-sdk"
 
 end
