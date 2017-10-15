@@ -63,7 +63,8 @@ s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
   # s.platform     = :ios
   s.platform     = :ios, "9.0"
-
+  s.static_framework = true
+  
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
@@ -77,8 +78,8 @@ s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/RobertFiorentino/AnotherFramework.git", :tag => "#{s.version}" }
-#s.source       = { :path => '.' } #{ :git => "http://EXAMPLE/AnotherFramework.git", :tag => "#{s.version}" }
+  # trying to see if this is needed or if i can do it local#s.source       = { :git => "https://github.com/RobertFiorentino/AnotherFramework.git", :tag => "#{s.version}" }
+s.source       = { :path => '.' } #{ :git => "http://EXAMPLE/AnotherFramework.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -132,6 +133,6 @@ s.source_files  = "AnotherFramework/**/*" #"Classes", "Classes/**/*.{h,m}"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency "mopub-ios-sdk"
+  #s.dependency "mopub-ios-sdk" # trying to use the new beta so taking this out
 
 end

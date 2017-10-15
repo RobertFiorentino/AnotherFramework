@@ -6,6 +6,6 @@ target 'AnotherFramework' do
   use_frameworks!
 
   # Pods for AnotherFramework
-  pod 'mopub-ios-sdk'
+  #pod 'mopub-ios-sdk'
 
 end
